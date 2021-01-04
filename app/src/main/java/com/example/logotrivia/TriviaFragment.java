@@ -74,12 +74,12 @@ public class TriviaFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 if (choice){
-                addWinnerFragment(mBinding.toString());
+                addWinnerFragment(mParam1);
                     //TODO anadir el método que inicia el fragmento ganador y pasa el nombre
 
                 } else{
                     //TODO añadir el metodo que inicia el frgamento perdedor y pasa el nombre
-                    addLooserFragment(mBinding.toString());
+                    addLooserFragment(mParam1);
                 }
             }
 

@@ -5,6 +5,8 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -55,8 +57,23 @@ public class WinnerFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         String ganador = getString(R.string.ganador,mParam1);
         mBinding.tvGanador.setText(ganador);
+        mBinding.buttonWinnerBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                addTitleFragment();
+            }
+        });
 
     }
 
     //TODO método para volver al title al apretar el boton
+    private void addTitleFragment(){
+        TitleFragment titleFragment = TitleFragment.newInstance("","");
+        FragmentManager fragmentManager =getFragmentManager();
+        FragmentTransaction transaction = fragmentManager.beginTransaction()
+                .replace(R.id.fragment,titleFragment,TitleFragment.class.getSimpleName());
+        transaction.commit();
+
+
+    }
 }

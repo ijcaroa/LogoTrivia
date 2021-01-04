@@ -53,7 +53,6 @@ public class TitleFragment extends Fragment {
         mBinding = FragmentTitleBinding.inflate(inflater, container, false);
         return mBinding.getRoot();
     }
-    //Aca se manejan las vistas del fragmento
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
