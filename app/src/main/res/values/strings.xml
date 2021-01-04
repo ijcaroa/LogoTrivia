@@ -5,4 +5,5 @@
     <string name="saludo">Bienvenido, %1$s</string>
     <string name="escribe_tu_nombre">Escribe tu nombre</string>
     <string name="ganador">¡Genial!. %1$s , Ganaste</string>
+    <string name="perdedor">Bueno %1$s, te equivocaste, ¡Intentalo otra vez!</string>
 </resources>

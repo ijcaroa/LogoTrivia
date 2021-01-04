@@ -84,7 +84,7 @@ public class TriviaFragment extends Fragment {
             }
 
             private void addWinnerFragment(String name) {
-                WinnerFragment winnerFragment = WinnerFragment.newInstance(name,"");
+                WinnerFragment winnerFragment = WinnerFragment.newInstance(name);
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction transaction = fragmentManager.beginTransaction()
                         .replace(R.id.fragment,winnerFragment,WinnerFragment.class.getSimpleName())
@@ -93,7 +93,7 @@ public class TriviaFragment extends Fragment {
 
             }
             private void addLooserFragment(String name) {
-                LooserFragment looserFragment = LooserFragment.newInstance(name,"");
+                LooserFragment looserFragment = LooserFragment.newInstance(name);
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction transaction = fragmentManager.beginTransaction()
                         .replace(R.id.fragment,looserFragment,LooserFragment.class.getSimpleName())

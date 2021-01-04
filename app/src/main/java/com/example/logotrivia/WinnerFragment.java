@@ -17,20 +17,18 @@ public class WinnerFragment extends Fragment {
 
 
     private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
     private String mParam1;
-    private String mParam2;
+
     private FragmentWinnerBinding mBinding;
     public WinnerFragment() {
-        // Required empty public constructor
+
     }
 
 
-    public static WinnerFragment newInstance(String param1, String param2) {
+    public static WinnerFragment newInstance(String param1) {
         WinnerFragment fragment = new WinnerFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
     }
@@ -40,7 +38,7 @@ public class WinnerFragment extends Fragment {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+
         }
     }
 
