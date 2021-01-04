@@ -2,4 +2,7 @@
     <string name="app_name">LogoTrivia</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="saludo">Bienvenido, %1$s</string>
+    <string name="escribe_tu_nombre">Escribe tu nombre</string>
+    <string name="ganador">¡Genial!. %1$s , Ganaste</string>
 </resources>

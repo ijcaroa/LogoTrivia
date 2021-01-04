@@ -8,12 +8,14 @@
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvSaludo"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
-        android:text="Hola Peter "
-        android:textSize="18sp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/saludo"
+        android:textColor="@color/purple_700"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.168"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,15 +25,14 @@
         android:id="@+id/imageViewTrivia"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="141dp"
         android:layout_marginTop="28dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="141dp"
+        android:src="@drawable/whatsapp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:srcCompat="@drawable/whatsapp"
-        tools:src="@tools:sample/avatars" />
+        app:layout_constraintTop_toBottomOf="@+id/tvSaludo" />
 
     <TextView
         android:id="@+id/textView3"
@@ -39,7 +40,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="¿A qué logo pertenece la imagen?"
-        android:textSize="18sp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/purple_700"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageViewTrivia" />
@@ -49,6 +52,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,24 +62,28 @@
             android:id="@+id/radioButtonFace"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
             android:text="Pertenece a Facebook" />
 
         <RadioButton
             android:id="@+id/radioButtonTwit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
             android:text="Pertenece a Twitter" />
 
         <RadioButton
             android:id="@+id/radioButtonWhat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
             android:text="Pertenece a Whathsapp" />
 
         <RadioButton
             android:id="@+id/radioButtonInst"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
             android:text="Pertenece a Instagram" />
     </RadioGroup>
 
@@ -83,8 +91,10 @@
         android:id="@+id/buttonEnv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="110dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
         android:text="ENVIAR"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

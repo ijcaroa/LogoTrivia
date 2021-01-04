@@ -15,6 +15,8 @@
         android:layout_marginTop="284dp"
         android:layout_marginEnd="8dp"
         android:text="Bueno, te equivocaste, ¡Intentalo otra vez!"
+        android:fontFamily="@font/serrem_demo"
+        android:textColor="@color/purple_700"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
